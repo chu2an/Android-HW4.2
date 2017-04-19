@@ -22,13 +22,4 @@ public class MainActivity extends AppCompatActivity {
         theDisplay.setText("Hello "+message);
 
     }
-
-    protected void onResume(Bundle savedInstanceState){
-        theDisplay = (TextView)findViewById(R.id.textView_show);
-
-        Intent myIntent = getIntent();
-        String message = myIntent.getStringExtra("Name");
-
-        theDisplay.setText("Hello "+message);
-    }
 }
